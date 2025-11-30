@@ -1,21 +1,77 @@
-
 :root {
-    --bg-color-start: #6a11cb;
-    --bg-color-end: #2575fc;
-    --text-color: #ffffff;
-    --card-bg-color: rgba(255, 255, 255, 0.01);
-    --card-border-color: rgba(255, 255, 255, 0.1);
+    --bs-primary: #4F46E5;
+    --bs-secondary: #10B981;
+    --bs-accent: #F59E0B;
+    --bs-neutral-light: #F9FAFB;
+    --bs-neutral-dark: #111827;
+    --bs-font-sans-serif: "Inter", sans-serif;
+    --bs-font-monospace: "Poppins", sans-serif;
 }
+
 body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: linear-gradient(45deg, var(--bg-color-start), var(--bg-color-end));
-    color: var(--text-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
+    font-family: var(--bs-font-sans-serif);
+    background-color: var(--bs-neutral-light);
+    color: var(--bs-neutral-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--bs-font-monospace);
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+    background-color: #4338ca;
+    border-color: #4338ca;
+}
+
+.btn-secondary {
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary);
+}
+
+.btn-secondary:hover {
+    background-color: #059669;
+    border-color: #059669;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(90deg, var(--bs-primary), var(--bs-secondary));
+}
+
+.hero-section {
+    padding: 6rem 0;
+    color: white;
+}
+
+.question-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: white;
+}
+
+.question-card h5 {
+    font-weight: 600;
+}
+
+.question-card .options {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.question-card .options li {
+    padding: 0.5rem 0;
+}
+
+.question-card .explanation {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+    font-size: 0.9rem;
 }
